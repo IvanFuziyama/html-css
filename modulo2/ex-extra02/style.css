@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --cor1: #F2E3D5;
+    --cor2: #3CA6A6;
+    --cor3: #026773;
+    --cor4: #024959;
+    --cor5: #012E40;
+    --fonte-padrao: 'Outfit', Arial;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: var(--fonte-padrao);
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cor5);
+    padding: 10px 0px;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: var(--cor1);
+    margin: 0px 30px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav li{
+    padding-left: 0px;
+}
+nav .logo{
+    font-size: 24px;
+    font-weight: 600;
+}
+nav a.login{
+    border-color: var(--cor1);
+    border: 1px;
+    border-radius: 10px;
+    border-style: double;
+    padding: 8px;
+}
+nav a.cadastro{
+    background-color: #F2E3D5;
+    border-radius: 10px;
+    padding: 8px;
+    color: #012E40;
+}
+nav li a:hover{
+    transition: 0.6s;
+    background-color: rgba(255, 255, 255, 0.733);
+    color: var(--cor5);
+}
