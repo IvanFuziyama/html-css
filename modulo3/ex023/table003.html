@@ -25,6 +25,12 @@
         thead, tfoot{
             background-color: rgb(185, 185, 185);
         }
+        tbody > tr:nth-child(odd){ /* odd-impar | even-par*/
+            background-color: rgb(159, 253, 131);
+        }
+        tbody > tr:nth-child(even){
+            background-color: rgb(131, 255, 172);
+        }
         .estado{
             text-align: center;
         }
@@ -64,11 +70,19 @@
                     <td class="estado">Rio de Janeiro</td>
                     <td>17.264.943</td>
                 </tr>
+                <tr>
+                    <td class="estado">Bahia</td>
+                    <td>14.873.064</td>
+                </tr>
+                <tr>
+                    <td class="estado">Paraná</td>
+                    <td>11.377.239</td>
+                </tr>
             </tbody>
             <tfoot>
                 <tr>
                     <th scope="row">Total de Habitantes</th>
-                    <td>84.352.783</td>
+                    <td>110.603.086</td>
                 </tr>
             </tfoot>
         </table>
