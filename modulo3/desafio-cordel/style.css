@@ -59,16 +59,18 @@ section p{
     background-color: var(--cor-fundo-imagens);
     color: var(--color-fonte1);
     padding: 10px;
+    
+}
+#q1, #q2{
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 #q1{
     background-image: url(imagens/background001.jpg);
-    background-attachment: fixed;
-    background-size: 100% 100%;
 }
 #q2{
     background-image: url(imagens/background002.jpg);
-    background-attachment: fixed;
-    background-size: 100% 100%;
 }
 footer{
     background-color: var(--cor-footer);
