@@ -12,6 +12,12 @@
             width: 500px;
             border-collapse: collapse;
         }
+        caption{
+            font-weight: bold;
+            font-size: 1.5em;
+            background-color: rgb(224, 224, 224);
+            padding: 6px;
+        }
         td,th{
             border: 1px solid black;
             padding: 10px;
@@ -29,6 +35,7 @@
     <!--
     ANATOMIA PARA TABELAS GRANDES
     TABLE
+        CAPTION
         THEAD(cabecalho):
             TR, TD, TH
         TBODY(corpo):
@@ -37,10 +44,11 @@
             TR, TD, TH
         -->
         <table>
+            <caption>População dos estados do Brasil</caption>
             <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
                 </tr>
             </thead>
             <tbody>
@@ -59,7 +67,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Total de Habitantes</th>
+                    <th scope="row">Total de Habitantes</th>
                     <td>84.352.783</td>
                 </tr>
             </tfoot>
