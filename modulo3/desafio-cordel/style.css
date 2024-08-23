@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 :root{
-    --cor-fundo: rgb(255, 255, 255);
+    --cor-fundo: rgb(252, 214, 125);
     --cor-nav: rgb(0, 0, 0);
     --cor-footer: rgb(0, 0, 0);
     --color-fonte1:rgb(255, 255, 255);
@@ -25,7 +25,8 @@ nav p, nav h1, nav a{
     display: flex;
 }
 nav h1{
-    font: bold 136px var(--font-titulo);
+    font: bold 8vw var(--font-titulo);
+    font-variant: small-caps;
 }
 nav p{
     font-family: var(--fonte2);
@@ -38,16 +39,21 @@ nav a{
 nav a:hover{
     text-decoration: underline;
 }
+body{
+    background-color: var(--cor-fundo);
+}
 main{
     font-family: var(--fonte-padrao);
 }
-div.q{
-    padding: 30px;
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
 }
-div.q p{
-    width: 500px;
-    height: 800px;
-    font-size: 47px;
+section p{
+    max-width: 500px;
+    max-height: 800px;
+    font-size: 3.4vw;
 }
 #q1 p, #q2 p{
     background-color: var(--cor-fundo-imagens);
