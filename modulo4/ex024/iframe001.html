@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de Iframe</title>
+    <style>
+        iframe{
+            border: 1px solid black;
+            width: 500px;
+            height: 500px;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de Iframe</h1>
     <p>
         Acessando o site do 
         
-        <iframe src="https://www.cursoemvideo.com" frameborder="0">
-            
+        <!-- tamanho 300x150-->
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" scrolling="no">
+            <a href="https://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a>
         </iframe>
         para aprender a programar
+    </p>
+    <p>
+        O repositório do Guanabara
+
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0">
+            <a href="https://gustavoguanabara.github.io" target="_blank">no github</a>
+        </iframe>
+
+        também é legal
     </p>
 </body>
 </html>
