@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela{
+            width: 95vw;
+            border: 2px solid black;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate sequi dolorum architecto, eum quisquam vel adipisci in soluta voluptates obcaecati ex ullam quibusdam ipsum sapiente optio mollitia quo fugiat. Doloribus.</p>
+
+    <ul>
+        <li><a href="pag-extras/pagina001.html" target="frame1">Primeira página</a></li>
+        <li><a href="pag-extras/pagina002.html" target="frame1">Segunda página</a></li>
+        <li><a href="pag-extras/pagina003.html" target="frame1">Terceira página</a></li> <!--Para exibir uma página para o iframe, tem usar o 'name=" "' e depois chamar ele com o 'target=" "', mas com o mesmo nome-->
+    </ul>
+    
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora praesentium animi necessitatibus modi omnis. In porro earum molestiae, amet dignissimos, hic tempore repellat sequi voluptatum distinctio cumque exercitationem consequatur eveniet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, officiis cum quas exercitationem quae facilis aliquid soluta officia eligendi totam nulla quo ipsum, eum, voluptatem recusandae consequuntur delectus quos! Nihil.</p>
+
+    <iframe src="" id="tela" name="frame1">
+        <p>Seu navegador não é compatível</p>
+    </iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus aperiam iste ad dolor totam. At, vitae inventore neque dicta dignissimos eveniet, voluptatibus itaque, in saepe aut esse veniam est magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem reiciendis reprehenderit deserunt fugit officiis impedit veritatis, voluptatum libero soluta illo sapiente qui cum nobis quod natus omnis, at magni tenetur.</p>
+</body>
+</html>
