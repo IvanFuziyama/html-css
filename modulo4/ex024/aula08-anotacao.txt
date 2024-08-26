@@ -1,0 +1,5 @@
+aula 08 - Dicas para iframes melhores
+
+Para colocar um mapa dentro de um site, é só ir no google maps, colocar o endereço, clicar em compartilhar e depois ir em incoporar 
+
+iframes serve para mostrar vídeos, mapas, apresentações... dentro do site
