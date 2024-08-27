@@ -1,0 +1,18 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: cover; /*ficou a tela ajustada na página inteira por causa desse cover, mas é necessário para o iframe*/
+    width: 100vw;
+    height: 100vh;
+}
+img{
+    width: 100vw;
+}
