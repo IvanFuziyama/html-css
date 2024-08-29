@@ -42,5 +42,6 @@ section#redes img:hover{
     transition: 0.7s;
     opacity: 0.5;
     border: 1px solid white;
+    translate: 25%;
 }
 
