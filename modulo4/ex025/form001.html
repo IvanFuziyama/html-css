@@ -8,11 +8,15 @@
         body{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
+        h2{
+            color: red;
+        }
     </style>
 </head>
 <body>
     <h1>Meu primeiro Formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <h2>A mensagem do php não vai funcionar se estiver usando a entensão live server do vscode</h2>
+    <form action="cadastro.php" autocomplete="off"> <!--Com a estensão Live Server, não ira aparecer a mensagem do php-->
         <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Confirmar"></p>
