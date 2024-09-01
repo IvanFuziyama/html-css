@@ -14,7 +14,8 @@
         </p>
         <p>
             <label for="inivel">Nível de Satisfação</label>
-            <input type="range" name="nivel" id="inivel" min="0" max="6" value="0">
+            <input type="range" name="nivel" id="inivel" min="0" max="6" value="0" oninput="ival.innerHTML = Number(inivel.value)">
+            <output id="ival">0</output>
         </p>
         <p>
             <label for="ifoto">Foto</label>
