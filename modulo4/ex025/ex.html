@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo formulário de restaurante</h1>
+    <form action="cadastro.php" autocomplete="off" method="post">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required>
+        </p>
+        <p>
+            <label for="iemail">Email:</label>
+            <input type="email" name="email" id="iemail" required autocomplete="on">
+        </p>
+        <p>
+            <label for="itel">Telefone:</label>
+            <input type="tel" name="tel" id="itel" placeholder="(xx)xxxxx-xxxx" required>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label>
+            <textarea name="msg" id="isgm" cols="30" rows="10" maxlength="100" placeholder="Coloque uma sugestão ou dúvida" required></textarea>
+        </p>
+        <p>
+            <label for="irag">Nível de Satisfação</label>
+            <input type="range" name="rag" id="irag" min="0" max="10" value="0" oninput="ival.innerHTML = Number(irag.value)">
+            <output id="ival">0</output>
+        </p>
+        <p>
+            <label for="isex" value="M">Masculino</label>
+            <input type="radio" name="sex" id="isex">
+            <label for="isex" value="F">Feminino</label>
+            <input type="radio" name="sex" id="isex">
+        </p>
+        <p>
+            <select name="est" id="iest">
+                <option value="MG">Minas Gerais</option>
+                <option value="SP" selected>São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
