@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+    span#burguer{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+    menu li{
+        display: inline-block;
+    }
+    nav a{
+        background-color: rgb(54,54,54);
+        border-top: none;
+        color: white;
+    }
+    nav{
+        background-color: rgb(54, 54, 54);
+    }
+    main{
+        width: 768px;
+    }
+}

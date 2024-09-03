@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <title>Media Query</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Media Query</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -39,6 +40,13 @@
         function clickMenu(){
             var imenu = document.getElementById('imenu');
             if(imenu.style.display == 'none'){
+                imenu.style.display = 'block'
+            }else{
+                imenu.style.display = 'none'
+            }
+        }
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
                 imenu.style.display = 'block'
             }else{
                 imenu.style.display = 'none'
