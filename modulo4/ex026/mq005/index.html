@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
     <title>Media Query</title>
 </head>
 <body>
     <header>
         <h1>Media Query</h1>
-        <menu>
-            <ul>
-                <li><a href="#">Opção 1</a></li>
-                <li><a href="#">Opção 2</a></li>
-                <li><a href="#">Opção 3</a></li>
-                <li><a href="#">Opção 4</a></li>
-                <li><a href="#">Opção 5</a></li>
-                <li><a href="#">Opção 6</a></li>
-            </ul>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="imenu">
+            <nav>
+                <ul>
+                    <li><a href="#">Opção 1</a></li>
+                    <li><a href="#">Opção 2</a></li>
+                    <li><a href="#">Opção 3</a></li>
+                    <li><a href="#">Opção 4</a></li>
+                    <li><a href="#">Opção 5</a></li>
+                    <li><a href="#">Opção 6</a></li>
+                </ul>
+            </nav>
         </menu>
     </header>
     <main>
@@ -31,5 +35,15 @@
     <footer>
 
     </footer>
+    <script>
+        function clickMenu(){
+            var imenu = document.getElementById('imenu');
+            if(imenu.style.display == 'none'){
+                imenu.style.display = 'block'
+            }else{
+                imenu.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>
