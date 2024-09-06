@@ -15,7 +15,8 @@
 }
 body{
     background-color: var(--cor1);
-
+    height: 100vh;
+    width: 100vw;
 }
 section#login{
     background-color: var(--cor0);
@@ -23,19 +24,25 @@ section#login{
     height: 500px;
     border-radius: 20px;
     margin-top: 50px;
+    transition: 0.5s;
 }
 section h1{
     text-align: center;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.349);
 }
-section h1, p{
+#formulario{
     padding: 10px;
+    display: block;
+}
+input{
+    margin: 10px;
 }
 #imagem{
     background: #789CCF url(../imgs/metal1.jpg);
     height: 200px;
     background-size: cover;
     border-radius: 20px 20px 0 0;
+    display: block;
 }
 .container{
     display: flex;
